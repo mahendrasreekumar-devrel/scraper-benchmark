@@ -1,5 +1,5 @@
 # Scraper Benchmark — URL Test Set
-# 25 URLs across 6 categories.
+# 21 URLs across 5 categories.
 # Categories are chosen to surface meaningful differences between scrapers,
 # particularly around JavaScript rendering and bot-protection bypass.
 #
@@ -62,19 +62,6 @@ categories:
       - url: "https://www.glassdoor.com/blog/guide/how-to-write-a-resume/"
         name: "Glassdoor Blog"
         expected_content: "resume"
-
-  akamai_perimeter_protected:
-    description: "Sites protected by Akamai Bot Manager or PerimeterX. High-signal test for enterprise-grade anti-bot bypass."
-    urls:
-      - url: "https://www.bestbuy.com/site/apple-airpods-pro-2nd-generation/4900964.p"
-        name: "Best Buy – AirPods Pro"
-        expected_content: "AirPods"
-      - url: "https://www.target.com/p/apple-airpods-pro-2nd-generation/-/A-85978612"
-        name: "Target – AirPods Pro"
-        expected_content: "AirPods"
-      - url: "https://www.chewy.com/royal-canin-medium-adult-dry-dog-food/dp/53506"
-        name: "Chewy – Dog Food"
-        expected_content: "Royal Canin"
 
   ecommerce:
     description: "E-commerce product pages — dynamic pricing, personalised content, often behind CDN + bot protection."

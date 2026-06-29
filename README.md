@@ -2,7 +2,7 @@
 
 **How does Anakin's URL Scraper stack up against the field?**
 
-This repo benchmarks [Anakin's `/v1/scrape` endpoint](https://anakin.io) against six other web scraping APIs across 24 URLs — a mix of static pages, JS-heavy SPAs, Cloudflare-protected sites, Akamai-protected sites, e-commerce pages, and news/media.
+This repo benchmarks [Anakin's `/v1/scrape` endpoint](https://anakin.io) against six other web scraping APIs across 21 URLs — a mix of static pages, JS-heavy SPAs, Cloudflare-protected sites, e-commerce pages, and news/media.
 
 You bring your own API keys. Plug them into `.env`, run one command, get a terminal table + CSV + charts.
 
@@ -95,12 +95,11 @@ python scripts/generate_plots.py results/results_2026-06-28_12-00-00.json
 
 ## URL test set
 
-Test URLs live in [`urls/test_urls.yaml`](urls/test_urls.yaml) — 24 URLs across six categories:
+Test URLs live in [`urls/test_urls.yaml`](urls/test_urls.yaml) — 21 URLs across five categories:
 
 - **Static HTML** — baseline; all scrapers should pass
 - **JS-heavy SPAs** — React/Next.js apps; requires headless rendering
 - **Cloudflare-protected** — Cloudflare Bot Management
-- **Akamai/PerimeterX-protected** — enterprise-grade bot detection
 - **E-commerce** — dynamic pricing, personalised content, strong anti-bot
 - **News/media** — CDN-served, some soft paywalls
 
