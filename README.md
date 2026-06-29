@@ -103,7 +103,7 @@ Test URLs live in [`urls/test_urls.yaml`](urls/test_urls.yaml) — 18 URLs acros
 - **E-commerce** — dynamic pricing, personalised content, strong anti-bot
 - **News/media** — CDN-served, some soft paywalls
 
-Swap URLs or add your own in the YAML — the format is documented inline.
+The URLs shipped here are the ones we ran for the official report. Swap them out or add your own in the YAML — the format is documented inline.
 
 ## How scoring works
 
