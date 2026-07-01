@@ -45,7 +45,7 @@ Pre-run results and charts are in [`results/official/`](results/official/). Re-r
 **Requirements:** Python 3.10+
 
 ```bash
-git clone https://github.com/anakin-io/scraper-benchmark
+git clone https://github.com/mahendrasreekumar-devrel/scraper-benchmark
 cd scraper-benchmark
 
 # Install dependencies
@@ -99,9 +99,9 @@ To regenerate charts from an existing results file:
 python scripts/generate_plots.py results/results_2026-06-28_12-00-00.json
 ```
 
-## URL test set
+## URL set
 
-Test URLs live in [`urls/test_urls.yaml`](urls/test_urls.yaml) — 18 URLs across five categories:
+URLs live in [`urls/urls.yaml`](urls/urls.yaml) — 18 URLs across five categories:
 
 - **Static HTML** — baseline; all scrapers should pass
 - **JS-heavy SPAs** — React/Next.js apps; requires headless rendering

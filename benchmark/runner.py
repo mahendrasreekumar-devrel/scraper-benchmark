@@ -13,7 +13,7 @@ from .scrapers.base import BaseScraper
 from .judge import JudgedResult, judge
 
 
-URLS_FILE = Path(__file__).parent.parent / "urls" / "test_urls.yaml"
+URLS_FILE = Path(__file__).parent.parent / "urls" / "urls.yaml"
 
 
 def load_urls() -> list[dict]:
