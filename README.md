@@ -111,6 +111,23 @@ Test URLs live in [`urls/test_urls.yaml`](urls/test_urls.yaml) — 18 URLs acros
 
 The URLs shipped here are the ones we ran for the official report. Swap them out or add your own in the YAML — the format is documented inline.
 
+## Pricing comparison
+
+Most scraping APIs advertise a low headline rate — then add credit multipliers for JavaScript rendering, anti-bot bypass, and premium proxies. The table below shows what you actually pay once those features are on, since that's what this benchmark tests.
+
+| Scraper | Cost per 1,000 requests | JS rendering |
+|---|---|---|
+| **Anakin** | **$0.83** | Included at base rate |
+| Firecrawl | $0.83 | Included at base rate |
+| ScrapingBee | $0.20 (basic HTML) · $0.98 (with JS) | +5 credits per request |
+| ZenRows | $0.28 (basic) · $2.50 (JS + proxies) | +5–25× credits |
+| ScraperAPI | $0.49 (basic) · $4.90 (with JS) · $9.80+ (JS + Cloudflare bypass) | +10 credits per request |
+| Tavily | $8.00 | N/A — text extraction only |
+
+Anakin's base rate covers JavaScript rendering and anti-bot bypass — no multipliers. At comparable volume tiers (~100k requests/month), it matches Firecrawl on price while leading on success rate and content quality.
+
+> Prices sourced from each provider's publicly available pricing pages (July 2026). Plan tiers used: Anakin Scale ($100/mo, 120k credits), Firecrawl Standard ($83/mo, 100k credits), ScrapingBee Freelance ($49/mo, 250k credits), ZenRows Developer ($69/mo), ScraperAPI Hobby ($49/mo, 100k credits), Tavily pay-as-you-go ($0.008/credit).
+
 ## How scoring works
 
 Each URL × scraper result is scored by a judge (`benchmark/judge.py`):
